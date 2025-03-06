@@ -1,0 +1,40 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+header {
+    background-color: #4CAF50;
+    font-size: 250%;
+    text-align:center;
+    color:white;
+    padding: 70px;
+    }
+  nav {
+    background-color: black;
+    font-size: 150%;
+    color:white;
+    text-align: center;
+    padding: 10px;
+  }
+  nav button {
+    background-color: black;
+    padding: 1%;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    border:none;
+    font-size: 90%;
+    
+  }
+  nav button:hover {
+    background-color: #575757
+  }
+  h3 {
+      text-align:center;
+      color: white;
+      background-color: #4CAF50;
+      border-radius: 50px;
+      padding:10px;
+      margin:2%;
+      font-size: 25px;
+  }
