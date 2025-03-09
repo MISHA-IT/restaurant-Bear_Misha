@@ -21,3 +21,6 @@ index.addEventListener("click", function () {
 indexPanel.addEventListener("click", function () {
     alert("Ошибка! На страницу невозможно перейти! Страница пока не готова!");
    });
+
+
+
