@@ -18,7 +18,7 @@ h2 {
     padding: 15px;
     text-align: center;
     display: inline-block;
-    z-index: 100;
+    z-index: 300;
     }
     
     .menu {
@@ -35,6 +35,7 @@ h2 {
         overflow-y: auto;
         padding-bottom: 20px;
         text-align: center;
+        z-index: 250;
     }
     .menu_button {
         height: 35px;
@@ -76,6 +77,50 @@ h2 {
         padding: 5px;
         margin: 2px;
     }
+
+    .content_of_topics {
+        width: 250px;
+        background-color: #ff0000;
+        position: fixed;
+        right: 2%;
+        top: 5%;
+        padding-bottom: 0px;
+        text-align: center;
+        margin-top: 120px;
+        border-radius: 5px;
+        color: rgb(255, 255, 255);
+        z-index: 200;
+    }
+    .content_of_topics a {
+        color: rgb(255, 255, 255);
+        background-color: #ff0000;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+
+    .content_of_topics a:hover {
+        color: rgb(255, 0, 0);
+        background-color: #f4f4f4;
+    }
+
+    #button_contents {
+        color: rgb(255, 255, 255);
+        background-color: #ff0000;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        border:none;
+        border-radius: 5px;
+    }
+
+    #content {
+        display: none;
+    }
     @media (max-width: 1324px) {
         nav {
             display: none;
@@ -94,28 +139,30 @@ h2 {
 
     main {
         padding-top: 150px;
-        font-size: 40px;
-        color: red;
         text-align: center;
-        z-index: -200;
         margin: 10px;
     }
 
-    main .span {
-        font-size:30px;
-        padding: 10px;
-        margin-top: 20px;
+    .container_news {
+        margin-top: 50px;
     }
 
-
-.photo {
-    max-width: 600px;
-    border: 2px solid red;
-    border-radius: 20px;
+article img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+}    
+article {
+    border: 1px solid red;
+    width: 300px;
+    border-radius: 10px;
+    color: #ff0000;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px;
+    margin-top: 15px;
 }
-
-@media (max-width: 600px) {
-    .photo {
-        width: 400px;
-    }
+article h3 {
+    color: #ff0000;
 }
