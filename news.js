@@ -1,9 +1,7 @@
 let button = document.querySelector(".menu_button");
 let menu = document.querySelector(".menu");
-let elements = {
-    index: document.getElementById("index"),
-    indexPanel: document.getElementById("index_panel")
-};
+let index = document.getElementById("index");
+let indexPanel = document.getElementById("index_panel");
 
 
 button.addEventListener("click", function () {
@@ -22,5 +20,16 @@ indexPanel.addEventListener("click", function () {
     alert("Ошибка! На страницу невозможно перейти! Страница пока не готова!");
    });
 
+let contentButton = document.getElementById("button_contents");
+let content = document.getElementById("content");
+let containerTopics = document.getElementById("container_topics");
 
-
+contentButton.addEventListener("click", function () {
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+    containerTopics.style.paddingBottom = "20px";
+  } else {
+    content.style.display = "none";
+    containerTopics.style.paddingBottom = "0px";
+  }
+});
