@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="news.css">
 </head>
 <body>
-    <!-- <img src="https://lh3.googleusercontent.com/pw/AP1GczMUK5tw3FtfVf0PLrXGRMkK0c1qfb6nWh5UFg80YC6B0XCQ8gBnM1Sh6d-XmfW287jOkQ7BsrPScLyO6X_ye7wqiOu_YikseV7tmxQ5vDiBlwgOXmQ=w2400" height="300" weight="300" style="float: center;"> -->
     <header>
         <h2>Новости</h2>
-        <button class="menu_button">&#9776 Меню</button>
+        <button class="menu_button">&#9776; Меню</button>
         <nav> 
             <a href="#" id="index">Главная</a>  
             <a href="order/order.html">Заказ</a>  
@@ -24,16 +23,65 @@
         <a href="menu/menu.html">Меню</a>
         <a href="assistent/assistent.html">Чат-бот</a>  
     </section>
+    <!-- Когда нету новостей -->
+     <!-- <figure>
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczMUK5tw3FtfVf0PLrXGRMkK0c1qfb6nWh5UFg80YC6B0XCQ8gBnM1Sh6d-XmfW287jOkQ7BsrPScLyO6X_ye7wqiOu_YikseV7tmxQ5vDiBlwgOXmQ=w2400" height="300" weight="300" style="float: center;">
+    </figure> -->
     <main>
-    С 8 Марта!<br>
-    <span class="span" > Ресторан Сытый медвежонок Миша поздравляет всех наших любимых Женщин с праздником!</span>
-    <br><span style="font-size:20px;"> И дарит вам бесплатный торт "Цветочек Восьмого Марта!" от нашего шеф-повара Давыдова Михаила! Закажите его через Телеграмм!</span>
-        <div class="image">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczPt6CUJbQ3gHGir4YiW8ZbxmS79nMDWpIvhg2_-F_NkN2wuOEp8d-735j5rP0pd5PTPCy3Wp9nHLw1L1bTr-ZQIkTPJkC67KFx6bEHW8_ewGVxggiI=w2400" class="photo">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczPPnI6VlTO3Axbs9GxwsjOsMWwr9qJCITquL8ahoOKxKAOUFgyPQnnnNm7s_J-utJ4cktsBTE7wJdVJzjpuV41zMl7DH9ZnNDuO46w9E-a2FrDpYK8=w2400" class="photo">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczMDQ5kSA7fN4eBPfAUKKXSKbq-ts_cIWZ7WCvta1PXYgJYsKYs1KAkq_evvz7FZA32_BkqHTZ8X-V78zDjH5oy84mOYG9Sa9s5vf3yCcLwX2dbQgz8=w2400" class="photo">
+        <div class="content_of_topics" id="container_topics">
+            <button id="button_contents">Содержание &#9776;</button>
+            <div id="content">
+                <a href="">События</a>
+                <a href="">Праздники</a>
+                <a href="">Акции и скидки</a>  
+                <a href="">Новинки в меню</a>
+                <a href="">О нашем ресторане</a>
+            </div>
         </div>
-</main>
+
+        <section class="container_news">
+            <article>
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNiVICdd6qaGdP7oaSvas-5g79mR4EfbDfaMixpZd_3rGoNbULIJJyJI6SKQh1StdkpHxWqQOFytc2AuCz4LFGjn3t5nEadZeJl0TztICmCmnB1sKE=w2400">
+                <h3>🎉 8 Марта!</h3> <br>В нашем ресторане праздник в честь женского дня!
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/86e2981f01be11f09e1c169842ebf1f0:1">
+                <h3>🎉 Неделя скидок на десерты!</h3><br> Получите -20% на все сладости с 10 по 17 марта!
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/479f4ba501bf11f0927bcaf2840a7b5b:1">
+                <h3>🥑 Новинка: салат «Медвежий перекус»!</h3> Лёгкий, но сытный салат с авокадо, орехами и мёдом.
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/09431fb801bf11f098f5968caa0a2b17:1">
+                <h3>🍕 День пиццы!</h3><br>Купите большую пиццу – получите маленькую в подарок!
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/839c773601bf11f089d0368c6fdc52c2:1">
+                <h3>🍹 Освежающие лимонады уже в меню!</h3> Попробуйте клубничный и цитрусовый лимонад.
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/aebf252301bf11f0a66022ac96e53444:1">
+                <h3>🎭 Праздник Масленицы в ресторане!</h3>Ждём всех на угощение блинами 10 марта!
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/ed0b8e2401bf11f082b20e88877b4a01:1">
+                <h3>🍞 Мы теперь печём хлеб сами! </h3><br> Каждый день свежий хлеб прямо из нашей печи.
+            </article>
+            <article>
+                <img src="https://masterpiecer-images.s3.yandex.net/2ea0ddf501c011f084c8be1f098d7bb4:1">
+                <h3>🏆 Наш ресторан – место встреч друзей! </h3>История гостей, которые познакомились у нас и теперь празднуют вместе.
+            </article>
+            <article>
+                <img src="https://files.oaiusercontent.com/file-Dpt9jbwoo1vsNRL3wupa49?se=2025-03-15T17%3A30%3A22Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De07d4ec0-917d-46a2-acd5-81589fcefc92.webp&sig=IgdbZoWXa%2BR7Ivvb8zEqgp0vgcy6RGrjKzUnRZFvkDU%3D">
+                <h3>🚀 Скоро откроется доставка!</h3><br><br>Готовим удобное онлайн-меню и быструю доставку.
+            </article>
+            <article>
+                <img src="">
+                <h3>🏅 Лучший работник месяца!</h3>Поздравляем нашего прекрасного повара, Наталью!
+            </article>
+        </section>
+    </main>
     <script src="news.js"></script>
 </body>
 </html>
