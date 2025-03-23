@@ -77,7 +77,14 @@ h2 {
         padding: 5px;
         margin: 2px;
     }
-
+    .section_topics {
+        background-color: white;
+        height: 100px;
+        position: fixed;
+        z-index: 200;
+        width: 1000vh;
+        margin: 0;
+    }
     .content_of_topics {
         width: 250px;
         background-color: #ff0000;
@@ -138,13 +145,13 @@ h2 {
 
 
     main {
-        padding-top: 150px;
+        padding-top: 100px;
         text-align: center;
         margin: 10px;
     }
 
     .container_news {
-        margin-top: 50px;
+        margin-top: 90px;
     }
 
 article img {
