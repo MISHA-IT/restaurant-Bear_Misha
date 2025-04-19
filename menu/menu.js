@@ -10,6 +10,6 @@ healthy.addEventListener("click", function() {
     window.location.href = "../healthy.html";
 });
 children.addEventListener("click", function() {
-    window.location.href = "../children.html";
+    window.location.href = "/children/children.html";
 });
 
