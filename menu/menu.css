@@ -58,3 +58,9 @@ header {
 main {
     margin-top: 140px;
 }
+
+@media (max-width:600px) {
+    .window_menu{
+        width: 60vh;
+    }
+}
