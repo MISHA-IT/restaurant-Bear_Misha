@@ -61,6 +61,6 @@ main {
 
 @media (max-width:600px) {
     .window_menu{
-        width: 60vh;
+        width: 70%;
     }
 }
