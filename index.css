@@ -16,57 +16,96 @@ header {
 }
 .panel_navigate_restaurant {
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступы между кнопками */
+    flex-wrap: wrap; /* Чтобы на маленьком экране переносились красиво */
 }
+
 .button_main_navigation {
+    position: relative;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: white;
     border: 1px solid white;
     background-color: rgba(240, 248, 255, 0);
     border-radius: 50%;
     cursor: pointer;
     font-size: 20px;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     padding: 5px;
     margin: 10px;
+    overflow: hidden;
+    transition: background-color 0.5s;
 }
+
+.button_main_navigation span,
+.button_main_navigation .image_menu {
+    position: absolute;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.image_menu {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+
+.button_main_navigation:hover {
+    background-color: white;
+}
+
+.button_main_navigation:hover span {
+    opacity: 0;
+}
+
+.button_main_navigation:hover .image_menu {
+    opacity: 1;
+}
+
 figure {
     text-align: center;
 }
 .welcome {
-    background-color: rgba(255, 0, 0, 0.306);
-    color: red;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     margin: 20px;
     border-radius: 15px;
     padding: 10px;
     text-align: center;
+    border: 1px solid red;
 }
 .birthday_block {
     text-align: center;
-    background-color: rgb(140, 205, 239);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     margin: 20px;
-    color: blue;
+    color: rgb(255, 0, 0);
+    border: 1px solid red;
 }
 .history {
-    background-color: rgba(0, 255, 0, 0.46);
-    color: green;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     padding: 10px;
     margin: 20px;
     border-radius: 15px;
     font-family: 'Times New Roman', Times, serif;
+    border: 1px solid red;
 }
 .history h1 {
     font-size: 30px;
 }
 .rights {
-    color: blue;
-    background-color: rgba(0, 0, 255, 0.197);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
     text-align: center;
     padding: 10px;
     margin: 20px;
     border-radius: 15px;
+    border: 1px solid red;
 }
 .button_additional_navigation {
     border: none;
