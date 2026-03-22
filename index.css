@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Nunito, sans-serif;
+    scroll-behavior: smooth;
+}
+.head {
+text-align: center;
+}
+header {
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+}
+.name_restaurant {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.panel_navigate_restaurant {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+.button_main_navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    width: 160px;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: background-color 0.5s;
+}
+.button_main_navigation span,.button_main_navigation .image_menu {
+    position: absolute;
+    transition: 0.5s;
+    text-align: center;
+}
+.image_menu {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+.button_main_navigation:hover {
+    background-color: white;
+}
+.button_main_navigation:hover span {
+    opacity: 0;
+}
+.button_main_navigation:hover .image_menu {
+    opacity: 1;
+}
+
+
+
+.media_navigation{
+    display: none;
+    background-color: white;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}  
+.menu_button {
+    height: 35px;
+    width: 70px;
+    border: none;
+    color: #ff0000;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hamburger_menu {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 0px;
+    height: 100vh; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 55px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none; 
+    overflow-y: auto;
+    padding-bottom: 20px;
+    z-index: 10;
+    text-align: center;
+}
+.hamburger_menu a {
+    color: rgb(255, 0, 0);
+        background-color: #f4f4f4;
+        font-size: 18px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+    }
+    .hamburger_menu a:hover {
+        background-color: #ff0000;
+        color: #ffffff;
+    }
+
+.image-container {
+    width: 100%;
+    overflow: hidden; 
+    background: white;
+    padding: 20px;
+}
+
+.image-track {
+    display: flex;
+    width: calc(250px * 8); 
+    animation: scroll 40s linear infinite; 
+}
+
+.image-track a img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    margin: 0 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Остановка при наведении — чтобы посетитель мог рассмотреть еду */
+.image-track:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 4)); /* Смещаем ровно на половину длины (на один набор фото) */
+    }
+}
+figure {
+    text-align: center;
+}
+.welcome {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    margin: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+/* .birthday_block {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin: 20px;
+    color: rgb(255, 0, 0);
+    border: 1px solid red;
+    height: 500px;
+} */
+.history {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid red;
+}
+.history h1 {
+    font-size: 30px;
+}
+.rights {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+    border: 1px solid red;
+}
+.panel_additional_navigation {
+border: 1px solid red;
+margin: 5px;
+border-radius: 50px;
+padding: 5px;
+background-color: rgb(255, 255, 255);
+z-index: 1000;
+position: -webkit-sticky;
+position: sticky;
+top: 10px;
+text-align: center;
+}
+.button_additional_navigation {
+border: none;
+background-color: rgba(255, 255, 255, 0);
+cursor: pointer;
+font-size: 20px;
+border-radius: 50px;
+width: max-content;
+padding: 15px;
+color: rgb(255, 0, 0);
+text-decoration: none;
+margin: 0 15px;
+}
+
+.button_additional_navigation:hover {
+    background-color: rgba(255, 0, 0, 0.39);
+    color: white;
+}
+footer {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    z-index: -200;
+ }
+ .Telegram_channel {
+    text-decoration: none;
+    background-color: rgb(250, 108, 83);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 120%;
+    display: inline-block;
+}
+.Telegram_channel:hover {
+    background-color: rgb(83, 133, 250);
+
+}
+@media (max-width: 700px) {
+    .Telegram_channel {
+        display: block;
+        width: 50%;
+        margin: 10px;
+    }
+    footer {
+        text-align: center;
+    }
+    .panel_navigate_restaurant {
+        display: none;
+    }
+    .panel_additional_navigation {
+        display: none;
+    }
+    .media_navigation {
+        display: flex;
+    }
+    header{
+        background: transparent;
+        background-image: url("https://art-lunch.ru/content/uploads/2014/02/Eggs_Benedict-600x366.jpg");
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+} 
+@media(max-width: 1185px) {
+    .button_additional_navigation {
+    border: none;
+    border-bottom: 1px solid red;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px 10px 0 0;
+    width: 250px;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+    .panel_additional_navigation{
+        border: none;
+        background-color: none;
+        position: static;
+    }
+}
