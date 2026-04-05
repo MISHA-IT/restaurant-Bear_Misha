@@ -1,3 +1,4 @@
+
 body {
     margin: 0px;
     font-family: sans-serif;
@@ -68,7 +69,7 @@ h2 {
         color: #ffffff;
     }
 
-    nav a {
+    nav a { 
         border-radius: 5px;
         color: #ffffff;
         border:2px solid #ffffff;
@@ -77,19 +78,8 @@ h2 {
         padding: 5px;
         margin: 2px;
     }
-    @media (max-width: 1340px) {
-        nav {
-            display: none;
-        }
-        .menu_button {
-            display: inline-block;
-        }
-        header {
-            text-align: left;
-        }
-    }
-    
-    main {
+
+        main {
         padding-top: 150px;
     }
     main article {
@@ -113,26 +103,87 @@ h2 {
     color: red;
     font-size: 20px;
     padding-top: 20px;
-    text-align: left;
+    text-align: center;
 }
-#description_button, #order_button {
+.order_button_group {
+    text-align: right;
+    margin-top: 50px;
+}
+.description_button, .order_button {
     background-color: white;
     border-radius: 5px;
     border: 1px solid red;
     color: red;
     font-size: 15px;
     margin: 5px;
+    cursor: pointer;
 }
-@media(max-width:600px) {
+.description_product {
+    border-radius: 5px;
+    border: 1px solid red;
+    color: red;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+footer {
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    z-index: -200;
+}
+.Telegram_channel {
+    text-decoration: none;
+    background-color: rgb(250, 108, 83);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 120%;
+    display: inline-block;
+}
+.Telegram_channel:hover {
+    background-color: rgb(83, 133, 250);
+
+}
+    @media (max-width: 1360px) {
+        nav {
+            display: none;
+        }
+        .menu_button {
+            display: inline-block;
+        }
+        header {
+            text-align: left;
+        }
+    }
+    @media (max-width: 640px){
     .image_tovar {
         border-radius: 5px 5px 0 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .description_product {
+        font-size: 20px;
+        background-color: #ff0000;
+        color: white;
+        margin-right: 140px;
+
     }
     main article {
         width: 220px;
-        height: 250px;
+        height: min-content;
         text-align: center;
     }
-}
+    iframe {
+        width: 80%;
+    }
+    .order_button_group {
+    margin-top: 0;
+    }
     footer {
         background-color: rgb(255, 0, 0);
         text-align: center;
@@ -142,6 +193,7 @@ h2 {
         width: 100%; 
         bottom: 0;
      }
+
      .Telegram_channel {
         text-decoration: none;
         background-color: rgb(250, 108, 83);
@@ -150,12 +202,12 @@ h2 {
         border-radius: 10px;
         font-size: 120%;
         display: inline-block;
+        margin: 5px;
     }
     .Telegram_channel:hover {
         background-color: rgb(83, 133, 250);
     
     }
-    @media (max-width: 600px) {
         .Telegram_channel {
             display: block;
             width: 50%
