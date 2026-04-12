@@ -12,14 +12,6 @@ button.addEventListener("click", function () {
   }
 });
 
-index.addEventListener("click", function () {
-   alert("Ошибка! На страницу невозможно перейти! Страница пока не готова!");
-  });
-  
-indexPanel.addEventListener("click", function () {
-    alert("Ошибка! На страницу невозможно перейти! Страница пока не готова!");
-   });
-
 let contentButton = document.getElementById("button_contents");
 let content = document.getElementById("content");
 let containerTopics = document.getElementById("container_topics");
